@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image gallery</title>
+    <link rel="stylesheet" href="imgSlider.css">
+    <link rel="icon" type="image/png\" href="/images/gallery.png">
+</head>
+<body>
+   <div class="gallery-wrap">
+    <img src="slide/back.png" alt="" id="back">
+    <div class="gallery">
+        <div>
+            <span><img src="slide/image1.jpg" alt=""></span>
+            <span><img src="slide/image2.jpg" alt=""></span>
+            <span><img src="slide/image3.jpg" alt=""></span>
+            <span><img src="slide/image7.jpg" alt=""></span>
+            <span><img src="slide/image8.jpg" alt=""></span>
+            <span><img src="slide/image9.jpg" alt=""></span>
+        </div>
+        <div>
+            <span><img src="slide/image4.jpg" alt=""></span>
+            <span><img src="slide/image5.jpg" alt=""></span>
+            <span><img src="slide/image6.jpg" alt=""></span>
+            <span><img src="slide/image101.jpg" alt=""></span>
+            <span><img src="slide/image10.jpg" alt=""></span>
+            <span><img src="slide/image11.jpg" alt=""></span>
+        </div>
+    </div>
+    <img src="slide/next.png" alt="" id="next">
+   </div> 
+   <script>
+    let scrollContainer=document.querySelector(".gallery");
+    let back=document.getElementById("back");
+    let next=document.getElementById("next");
+
+    scrollContainer.addEventListener("wheel", (evt) =>{
+        evt.preventDefault();
+        scrollContainer.scrollLeft+=evt.deltaY;
+        scrollContainer.style.scrollBehavior = "auto";
+    });
+
+    next.addEventListener("click",()=>{
+        scrollContainer.style.scrollBehavior="smooth";
+        scrollContainer.scrollLeft+=900;
+    });
+    back.addEventListener("click",()=>{
+        scrollContainer.style.scrollBehavior="smooth";
+        scrollContainer.scrollLeft-=900;
+    });
+   </script>
+</body>
+</html>

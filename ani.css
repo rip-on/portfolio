@@ -1,0 +1,10 @@
+body{
+    background-color: #212121;
+    color: #fff;
+}
+section{
+    display: grid;
+    align-items: center;
+    place-items: center;
+    min-height: 100vh;
+}

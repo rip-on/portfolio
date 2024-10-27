@@ -77,9 +77,9 @@ main hr{
 .vertical-desc{
     position: relative;
     top: 86px;
-    color: gray;
+    color:rgb(9, 163, 150);
     width: 150px;
-    font-size: 9px;
+    font-size: 12px;
 }
 .text-gray{
     color: gray;
@@ -147,7 +147,8 @@ footer #user-sub:hover{
     color: rgb(199, 75, 157);
     background-color: bisque;
 }
-.dropdown{
+
+/* .dropdown{
     display: inline-block;
 }
 .dropdown a{
@@ -168,4 +169,4 @@ footer #user-sub:hover{
 }
 .dropdown a:hover{
     background-color: hsl(0, 0%, 90%);
-}
+} */

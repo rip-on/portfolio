@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="tem_con.css">
+    <link rel="icon" type="icon/png\" href="images/">
+</head>
+<body>
+    <form action="">
+        <h1>Temperature Conversion:</h1>
+        <input type="number" id="textBox" value="0"><br>
+        <input type="radio" id="toFarenheit" name="unit">
+        <label for="toFarenheit">Celsius ➡️ Farenheit</label><br>
+        <input type="radio" id="toCelsius" name="unit">
+        <label for="toCelsius">Farenheit ➡️ Celsius</label><br>
+        <input type="radio" name="unit" id="toKelvin">
+        <label for="toKelvin">Celsius ➡️ Kelvin</label><br>
+        <input type="radio" id="toCelsiuss" name="unit">
+        <label for="toCelsiuss">Kelvin ➡️ Celsius</label><br>
+        <button type="button" onclick="convert()">Submit</button>
+        <p id="result"></p>
+    </form>
+    <script src="tem_con.js"></script>
+</body>
+</html>
