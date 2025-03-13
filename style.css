@@ -171,7 +171,7 @@ footer #user-sub:hover{
     background-color: hsl(0, 0%, 90%);
 } */
 
-@media(width: 640px){
+@media(max-width: 640px){
     nav{
         height: 50px;
     }
