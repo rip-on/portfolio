@@ -170,3 +170,9 @@ footer #user-sub:hover{
 .dropdown a:hover{
     background-color: hsl(0, 0%, 90%);
 } */
+
+@media(width: 640px){
+    nav{
+        height: 50px;
+    }
+}
