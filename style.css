@@ -147,6 +147,9 @@ footer #user-sub:hover{
     color: rgb(199, 75, 157);
     background-color: bisque;
 }
+.rightSection img{ 
+    height: 400px;
+}
 
 /* .dropdown{
     display: inline-block;
@@ -171,8 +174,27 @@ footer #user-sub:hover{
     background-color: hsl(0, 0%, 90%);
 } */
 
-@media(width: 640px){
+@media(max-width: 640px){
     nav{
         height: 50px;
     }
+    .rightSection img{ 
+        height: 200px;
+    }
+    .firstSection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 40px 0;
+    }
+    .secondSection{
+        max-width: 35vw;
+        margin: auto;
+        height: 40vh;
+    }
+    .left{
+        font-size: 0.75rem;
+        margin: auto;
+    }
+
 }
